@@ -5,8 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Hello World
-      uses: test@main
+      uses: mounes/test@main
       with:
         name: "Alire M"
-    - name: my-step
-      run: echo "Hello World!"
