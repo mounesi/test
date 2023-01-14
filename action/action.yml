@@ -1,12 +1,9 @@
 name: "Hello World"
-description: "A simple action that says hello"
+description: "Prints 'Hello, [name]' to the console."
 inputs:
   name:
-    description: "Name to say hello to"
-    default: "world"
-outputs:
-  message:
-    description: "The message that the action outputs"
+    description: "The name to greet."
+    default: "World"
 runs:
   using: "bash"
-  main: "entrypoint.sh"
+  entrypoint: "./entrypoint.sh"

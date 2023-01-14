@@ -1,8 +1,12 @@
-name: hello-world
-on: push
+name: Hello World Workflow
+on: [push]
 jobs:
-  my-job:
+  hello:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: echo "Hello World!"
+    - name: Hello World
+      uses: mounesi/test@master
+      with:
+        name: "Alire M"
+    - name: my-step
+      run: echo "Hello World!"
