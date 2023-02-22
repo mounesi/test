@@ -39,12 +39,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-      - name: Configure environment
-        run: |
-          source config-gen-app.sh demo-8731.hosted.unionai.cloud app33
-          conda activate ucloud3
-      
-      - name: Run pyflyte
-        run: |
-          pyflyte -c ./ci-config.yaml run --remote example.py wf
